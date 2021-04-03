@@ -60,8 +60,8 @@ class IndicASR:
             print(f"Downloading {file_name}")
             pydload.dload(url=url, save_to_path=file_path, max_time=None)
 
-        self.processor = Wav2Vec2Processor.from_pretrained("TE")
-        self.model = Wav2Vec2ForCTC.from_pretrained("TE")
+        self.processor = Wav2Vec2Processor.from_pretrained(lang_path)
+        self.model = Wav2Vec2ForCTC.from_pretrained(lang_path)
 
         if torch.cuda.is_available():
             print(f"Using GPU")
