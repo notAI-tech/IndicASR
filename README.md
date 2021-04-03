@@ -1,6 +1,12 @@
 # IndicASR
-ASR for Indian Languages
+Speech Recognition for Indian Languages
 
+# Notes
+
+- IndicASR is built on top of ![wav2vec2 XLSR-53](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec) and ![Huggingface's transformers](https://github.com/huggingface/transformers/) and has pre-trained models for `Telugu` in the current release.
+
+- The Telugu model is trained on the train set of MSR Indic corpus + a private corpus of ~94 hours obtained from various telugu interview playlists from Youtube.
+ 
 # Use as python module
 ```bash
 pip install --upgrade indicasr
