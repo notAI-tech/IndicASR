@@ -14,8 +14,10 @@ asr.transcribe("samples/telugu/hari.16k.wav")
 # "ఈ సినిమా తర్వాత నిర్మాతలు రూటు మార్చే ఆలోచనలో ఉన్నారు"
 
 # Batch inference
-asr.transcribe(["samples/telugu/hari.16k.wav", "samples/telugu/ramana.16k.wav"])
-["ఈ సినిమా తర్వాత నిర్మాతలు రూటు మార్చే ఆలోచనలో ఉన్నారు", "భారత దేశము నా మాత్ర భూమి భారతీవులంతా నా సోదరి సోదరులు"]
+asr.transcribe(["samples/telugu/hari.16k.wav",
+              "samples/telugu/ramana.16k.wav"])
+# ["ఈ సినిమా తర్వాత నిర్మాతలు రూటు మార్చే ఆలోచనలో ఉన్నారు",
+# "భారత దేశము నా మాత్ర భూమి భారతీవులంతా నా సోదరి సోదరులు"]
 ```
 
 |sample name   |  prediction    |  expected    |
